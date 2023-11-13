@@ -12,7 +12,7 @@
         <tr>
             <td>
                 <p><strong>Простая форма поиска с вариантами:</strong></p>
-                <form name="search bar" method="post" action=" http://fe.it-academy.by/TestForm.php">
+                <form name="search1" method="post" action=" http://fe.it-academy.by/TestForm.php">
                     <fieldset>
                         <legend>Строка поиска</legend>
                         <input type="text" name="search" maxlength="10">
@@ -28,7 +28,7 @@
             </td>
             <td>
                 <p><strong>Простая форма поиска с вариантами:</strong></p>
-                <form name="search bar" method="post" action=" http://fe.it-academy.by/TestForm.php">
+                <form name="search2" method="post" action=" http://fe.it-academy.by/TestForm.php">
                     <fieldset>
                         <legend>Строка поиска</legend>
                         <input type="text" name="search" required AUTOFOCUS>
@@ -60,13 +60,12 @@
                             <input type="checkbox" name="sys">Оставаться в системе
                         </label><br>
                         <input type="submit" value="Войти"><br>
-
                     </fieldset>
                 </form>
             </td>
             <td>
                 <p><strong>Опрос(голосование):</strong></p>
-                <form name="search bar" method="post" action=" http://fe.it-academy.by/TestForm.php">
+                <form name="survey" method="post" action=" http://fe.it-academy.by/TestForm.php">
                     <fieldset>
                         <legend>Как вам?</legend>
                         <label>
@@ -89,13 +88,13 @@
         <tr>
             <td>
                 <p><strong>Отзыв:</strong></p>
-                <form name="search bar" method="post" action=" http://fe.it-academy.by/TestForm.php">
+                <form name="feedback" method="post" action=" http://fe.it-academy.by/TestForm.php">
                     <fieldset>
                         <legend>Оставьте Ваш отзыв</legend>
-                        <input type="text" name="name">
+                        <input type="text" name="name" required>
                         <label for="name">Имя</label><br>
                         <br>
-                        <input type="email" name="email">
+                        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                         <label for="email">e-mail</label><br>
                         <textarea name="textarea">Форма отправки</textarea><br>
                         <input type="submit" value="Отправить"><br>
@@ -104,7 +103,7 @@
             </td>
             <td>
                 <p><strong>Выпадающий и мульти списки:</strong></p>
-                <form name="search bar" method="post" action=" http://fe.it-academy.by/TestForm.php">
+                <form name="lists" method="post" action=" http://fe.it-academy.by/TestForm.php">
                     <fieldset>
                         <legend>Города РБ</legend>
                         <select name="list" id="list1">
@@ -134,25 +133,27 @@
         <tr>
             <td>
                 <p><strong>Загрузка файла на сервер:</strong></p>
-                <form name="search bar" method="post" action=" http://fe.it-academy.by/TestForm.php"
+                <form name="upfile" method="post" action=" http://fe.it-academy.by/TestForm.php"
                     enctype="multipart/form-data">
                     <fieldset>
                         <legend>Upload</legend>
                         <p>Файл:</p>
                         <input type="file" id="file-uploader">
                         <p>Срок хранения (года):</p>
-                        <input type="text"><input type="submit" value="Загрузить">
+                        <input type="text" size="5"><input type="submit" value="Загрузить">
                     </fieldset>
                 </form>
             </td>
             <td>
                 <p><strong>Валидация данных HTML5:</strong></p>
-                <form name="search bar" method="post" action=" http://fe.it-academy.by/TestForm.php">
+                <form name="validation" method="post" action=" http://fe.it-academy.by/TestForm.php">
                     <fieldset>
                         <legend>Строка поиска</legend>
-                        <input type="text" name="search1" placeholder="Только русские буквы" onkeypress="return /[А-Яа-яЁё]/i.test(event.key)"><br>
+                        <input type="text" name="search1" placeholder="Только русские буквы"
+                            onkeypress="return /[А-Яа-яЁё]/i.test(event.key)"><br>
                         <br>
-                        <input type="tel" name="phone" placeholder="+375-29-1234567" pattern="[0-9]{3}-[0-9]{2}-[0-9]{7}" >
+                        <input type="tel" name="phone" placeholder="+375-29-1234567"
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{7}">
                         <input type="submit" value="Отправить">
 
                     </fieldset>
