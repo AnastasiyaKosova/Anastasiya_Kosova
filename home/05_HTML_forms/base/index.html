@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Index</title>
 </head>
 
 <body>
@@ -13,22 +13,22 @@
             <legend>Личные данные</legend>
 
             <input type="text" name="surname" placeholder="Фамилия" maxlength="25"
-                onkeypress="return /[А-Яа-яЁё]/i.test(event.key)" required AUTOFOCUS><br>
+                onkeypress="return /[А-Яа-яЁё]/i.test(event.key)" size="25" required AUTOFOCUS><br>
 
             <input type="text" name="name" placeholder="Имя" maxlength="20"
-                onkeypress="return /[А-Яа-яЁё]/i.test(event.key)" required><br>
+                onkeypress="return /[А-Яа-яЁё]/i.test(event.key)" size="20" required><br>
 
             <input type="text" name="patronymic" placeholder="Отчество" maxlength="24"
-                onkeypress="return /[А-Яа-яЁё]/i.test(event.key)" required><br>
+                onkeypress="return /[А-Яа-яЁё]/i.test(event.key)" size="24" required><br>
             <br>
             <fieldset>
                 <legend>Паспортные данные</legend>
 
                 <input type="text" name="series" placeholder="AA" maxlength="2" minlength="2"
-                    onkeypress="return /[A-Z]/i.test(event.key)" required>
+                    onkeypress="return /[A-Z]/i.test(event.key)" size="2" required>
 
                 <input type="text" name="passport number" placeholder="1234567" maxlength="7" minlength="7"
-                    onkeypress="return /[0-9]/i.test(event.key)" required>
+                    onkeypress="return /[0-9]/i.test(event.key)" size="7" required>
 
             </fieldset>
             <fieldset>
@@ -93,14 +93,39 @@
                     </optgroup>
                 </select>
             </fieldset>
-            <form>
+            <form id="my_form" name="personal_data" action=" http://fe.it-academy.by/TestForm.php" method="post">
                 <fieldset>
                     <legend>Данные для входа и восстановления пароля</legend>
-                    <input type="text" name="login" placeholder="Логин" minlength="5" 
-                    onkeypress="return /[A-Za-z]/i.test(event.key)" required AUTOFOCUS><br>
+                    <input type="text" name="login" placeholder="Логин" minlength="5"
+                        onkeypress="return /[A-Za-z]/i.test(event.key)" size="20" required><br>
+                    <input type="text" name="password" placeholder="Пароль" minlength="10"
+                        onkeypress="return /[A-Za-z]/i.test(event.key)" autocomplete="off" size="20" required>
                 </fieldset>
-        
+            </form>
+            <form id="my_form" name="personal_data" action=" http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset>
+                    <legend>Координаты:</legend>
+                    <input type="email" placeholder="введите адрес почты"><br>
+                    <input type="url" placeholder="введите адрес почты"><br>
+                </fieldset>
+            </form>
+            <form id="my_form" name="personal_data" action=" http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset>
+                    <legend>Цифры</legend>
+                    <input type="number" min="-2.5" max="2.5" step="0.1"><br>
+                    <input type="range" min="1" max="10">
+                </fieldset>
+            </form>
+            <form id="my_form" name="personal_data" action=" http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset>
+                    <legend>Кнопки управления</legend>
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Сбросить"><br>
 
+                    <input type="image" src="email.jpg">
+
+
+                </fieldset>
             </form>
 
 
