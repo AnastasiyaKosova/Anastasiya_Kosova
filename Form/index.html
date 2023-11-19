@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+
+</head>
+
+<body>
+    <h1 align="center">Форма заявки на работу в зоопарке</h1>
+    <p><em>Пожалуйста,заполните форму.Обязательные поля помечены </em></p>
+    <form id="formzoo" name="user" action="https://fe.it-academy.by/TestForm.php">
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <label for="name">Имя</label>
+            <input type="text" name="name" required><br>
+            <label for="phone">Телефон</label>
+            <input type="text" name="phone"><br>
+            <label for="email">Email</label>
+            <input type="text" name="email" required>
+        </fieldset>
+    </form>
+    <form id="pers" name="user" action="https://fe.it-academy.by/TestForm.php">
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <label for="old">Возраст</label>
+            <input type="text" name="old" required><br>
+            <label for="list">Возраст<select name="list" id="list">
+                    <option value="1">Женщина</option>
+                    <option value="2">Мужчина</option>
+                </select></label><br>
+            <label for="textarea">Перечислите личные качества</label><textarea name="textarea"></textarea>
+        </fieldset>
+    </form>
+    <form id="animal" name="user" action="https://fe.it-academy.by/TestForm.php">
+        <fieldset>
+            <legend>Выберите ваших любимых животных</legend>
+            <table width="100%">
+            <tr><td><label>
+                    <input type="checkbox" name="1form" value="value_01" id="Checkbox_Group1">Зебра
+                </label></td>
+                <td><label>
+                    <input type="checkbox" name="1form" value="value_02" id="Checkbox_Group2">Кошак
+                </label></td>
+                <td><label>
+                    <input type="checkbox" name="1form" value="value_03" id="Checkbox_Group3">Анаконда
+                </label></td>
+                <td><label>
+                    <input type="checkbox" name="1form" value="value_04" id="Checkbox_Group4">Человек
+                </label></td>
+            </tr>
+            <tr><td><label>
+                    <input type="checkbox" name="1form" value="value_05" id="Checkbox_Group5">Слон
+                </label></td>
+                <td><label>
+                    <input type="checkbox" name="1form" value="value_06" id="Checkbox_Group7">Антилопа
+                </label></td>
+                <td><label>
+                    <input type="checkbox" name="1form" value="value_07" id="Checkbox_Group7">Голубь
+                </label></td>
+                <td><label>
+                    <input type="checkbox" name="1form" value="value_07" id="Checkbox_Group7">Краб
+                </label></td>
+            </tr></table>
+        </fieldset>
+    </form>
+    <br>
+    <input type="submit" value="Отправить информацию">
+
+
+
+
+</body>
+
+</html>
