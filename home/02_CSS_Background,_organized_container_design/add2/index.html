@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Base3</title>
+    <style>
+        .wrap {
+            display: flex;
+            background-color: #dbdbdb;
+            overflow: visible
+        }
+
+        .menu {
+            width: 15em;
+            padding: 4px;
+            margin-left: 10px;
+
+        }
+
+        .cont1 {
+            height: 150px;
+            background: #aaaaaa;
+            margin-bottom: 0.2em;
+            margin-left: 15em;
+           
+        
+        }
+
+        .cont2 {
+            height: 220px;
+            background: #aaaaaa;
+            margin-bottom: 0.2em;
+
+
+        }
+        .mail{
+            display: flex;
+            flex-direction: row-reverse;
+
+        }
+
+
+        .footer {
+
+            background-color: #cccccc;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="menu">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Распологается слева</li>
+                <li>Блок навигации наполните контентом достаточным,чтобы по высоте он начинал захватывать вторую
+                    статью,как показано в данном примере </li>
+
+            </ul>
+        </div>
+        <div class="cont1">
+            <div>
+                <h3>Статья 1</h3>
+                <p>Размер блока:<br>
+                    Занимает всю доступную ширину<br>
+                    Должен присутствовать цвет фона<br>
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2em,при помощи свойства margin-bottom</p>
+            </div>
+
+            <div class="cont2">
+                <h3>Статья 2</h3>
+                <p>Размер блока:<br>
+                    Занимает всю доступную ширину<br>
+                    Должен присутствовать цвет фона<br>
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2em,при помощи свойства
+                    margin-bottom.Картинка вставлена при помощи тега,плавание организованно по правому краю внутри
+                    данной
+                    статьи для этой картинки.</p>
+                <div class="mail">
+                    <img src="icon_mail.png" alt="email">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">Нижний блок,подвал.Занимает всю доступную ширину.Высота определяется помещенным внутрь
+        контентом.
+
+    </div>
+
+</body>
+
+</html>
