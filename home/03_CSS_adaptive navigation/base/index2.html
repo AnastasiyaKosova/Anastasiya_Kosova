@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Index2</title>
     <style>
+        /* Все работает!*/
 
     ul {
     display: block;    
-	list-style: none;
 	position: absolute;
     
-	}
-
-    #menu {
-	margin: 10px;
-   
-
 	}
 
     ul li {
@@ -31,14 +25,46 @@
     position: relative;
     
 	}
+   
    a{
     text-decoration: none;
     color: #868991;
-   }
+    
+    }
+
+    .menu{
+    display: none;
+	top: 40px;
+    margin-left: -52px;
+
+    }
+
+    li:hover .menu{ 
+    display: block;
+    
+
+    }
+
+    #nav li li{
+    width: 120px;
+    position:relative;
+    
+
+    }
+  
+
+
+
    @media all and (max-width: 920px)
    {
     ul li{
         display: block;
+    }
+    .menu{
+    display: none;
+	top: -2px;
+    margin-left: 90px;
+
     }
    }
 
@@ -47,7 +73,7 @@
     </style>
 </head>
 <body>
-<div id="menu">
+<div id="nav">
   <ul>
     <li><a href="#">Понедельник</a></li>
     <li><a href="#">Вторник</a></li>
