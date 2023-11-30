@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index2</title>
+    <style>
+
+    ul {
+    display: block;    
+	list-style: none;
+	position: absolute;
+    
+	}
+
+    #menu {
+	margin: 10px;
+   
+
+	}
+
+    ul li {
+	display: inline-block;
+    background: #d3d3d3;
+    width: 120px;
+    height: auto;
+    border: 2px solid #010101;
+    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    
+	}
+   a{
+    text-decoration: none;
+    color: #868991;
+   }
+   @media all and (max-width: 920px)
+   {
+    ul li{
+        display: block;
+    }
+   }
+
+ 
+
+    </style>
+</head>
+<body>
+<div id="menu">
+  <ul>
+    <li><a href="#">Понедельник</a></li>
+    <li><a href="#">Вторник</a></li>
+    <li><a href="#">Среда</a>
+        <ul class="menu">
+            <li><a href="#">Завтрак</a></li>
+            <li><a href="#">Обед</a></li>
+            <li><a href="#">Ужин</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Четверг</a></li>
+    <li><a href="#">Пятница</a></li>
+    <li><a href="#">Суббота</a></li>
+  </ul>
+</div>
+</body>
+</html>
