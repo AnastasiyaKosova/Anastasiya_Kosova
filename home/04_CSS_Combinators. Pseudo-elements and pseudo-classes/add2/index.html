@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add2</title>
     <style>
         table {
-            width: 100%;
-            border: 5px solid #333;
+            border-collapse: collapse;
+            border: 5px solid black;
+            counter-reset: list 65;
 
         }
 
@@ -19,104 +21,244 @@
 
         .chess tr:nth-child(odd) td:nth-child(odd) {
             background: black;
+            color: aliceblue;
 
         }
 
         .chess tr:nth-child(even) td:nth-child(even) {
             background: black;
+            color: aliceblue;
 
         }
-        td{
-            counter-increment: example 1;
+
+        td {
+            text-align: center;
+            counter-increment: list -1;
+
+        }
+
+        td p::before {
+            content: counter(list);
+
         }
     </style>
 
 </head>
+
 <body>
     <table class="chess">
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
 
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+            </td>
         </tr>
 
     </table>
-    
+
 </body>
+
 </html>
